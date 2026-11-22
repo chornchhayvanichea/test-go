@@ -15,6 +15,7 @@ func headers(w http.ResponseWriter, req *http.Request) {
 
 func hello(w http.ResponseWriter, req *http.Request) {
 	fmt.Println("Hello world")
+	fmt.Fprintln(w, "hello world")
 }
 
 func main() {
